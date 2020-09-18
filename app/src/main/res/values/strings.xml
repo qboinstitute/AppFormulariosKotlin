@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AppFormulariosKotlin</string>
+    <string name="valetusuario">Ingrese su usuario</string>
+    <string name="valetpassword">Ingrese su password</string>
+    <string name="valbtnlogin">INGRESAR</string>
+    <string name="valetnombre">Ingrese su nombre</string>
+    <string name="valtvgenero">Seleccione su género</string>
+    <string name="valrbtnmasculino">Masculino</string>
+    <string name="valrbtnfemenino">Femenino</string>
+    <string name="valtvpreferencias">Seleccione sus preferencias</string>
+    <string name="valchkdeporte">Deporte</string>
+    <string name="valchkdibujo">Dibujo y arte</string>
+    <string name="valchkotros">Otras preferencias</string>
+    <string name="valbtnregistrar">Registrar Contacto</string>
+    <string name="valbtnlistar">LISTAR CONTACTOS</string>
+</resources>
