@@ -1,5 +1,6 @@
 package qboinstitute.com.appformularioskotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -17,7 +18,7 @@ class RegistroActivity : AppCompatActivity() {
         chkdeporte.setOnClickListener {
             agregarListaDePreferenciasSeleccionadas(it)
         }
-        chkotros.setOnClickListener {
+        chkdibujo.setOnClickListener {
             agregarListaDePreferenciasSeleccionadas(it)
         }
         chkotros.setOnClickListener {
@@ -29,9 +30,30 @@ class RegistroActivity : AppCompatActivity() {
                         obtenerGeneroSeleccionado()+" " +
                         obtenerPreferenciasSeleccionadas()
                 listacontactos.add(infocontacto)
+                enviarMensajeError(it, "Contacto Registrado")
+                setearControles()
             }
         }
+        btnlistar.setOnClickListener {
+            val intentlista = Intent(this,
+            ListaActivity::class.java)
+                .apply {
+                    putExtra("listacontactos", listacontactos)
+                }
+            startActivity(intentlista)
+        }
 
+    }
+
+    fun setearControles(){
+        listapreferencias.clear()
+        etnombre.setText("")
+        chkdeporte.isChecked = false
+        chkdibujo.isChecked = false
+        chkotros.isChecked = false
+        rggenero.clearCheck()
+        etnombre.isFocusableInTouchMode = true
+        etnombre.requestFocus()
     }
 
     fun obtenerPreferenciasSeleccionadas(): String{

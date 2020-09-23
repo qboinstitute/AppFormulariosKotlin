@@ -8,15 +8,15 @@
         android:fillViewport="true"
         tools:context=".RegistroActivity">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="109dp"
-            android:layout_height="114dp"
-            android:layout_marginTop="200dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_contact" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="109dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_contact" />
 
         <TextView
             android:id="@+id/tvtituloregistro"

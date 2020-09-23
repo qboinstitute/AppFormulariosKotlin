@@ -13,4 +13,5 @@
     <string name="valchkotros">Otras preferencias</string>
     <string name="valbtnregistrar">Registrar Contacto</string>
     <string name="valbtnlistar">LISTAR CONTACTOS</string>
+    <string name="valtvlistado">Lista de contactos</string>
 </resources>
